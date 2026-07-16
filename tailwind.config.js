@@ -1,18 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        blue: {
-          600: '#2563eb',
-        }
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-      }
-    }
-  }
+    extend: {},
+  },
+  plugins: [],
 }
