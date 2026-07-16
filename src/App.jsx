@@ -72,18 +72,14 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <div className="bg-slate-800 rounded-lg shadow-2xl p-6 border border-slate-700">
+        <div className="bg-slate-800 rounded-lg shadow-2xl p-8 border border-slate-700">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-white mb-2">
-              🖼️ Image Compressor
-            </h1>
-            <p className="text-slate-400 text-sm">
-              Compress PNG & JPEG up to 80% without losing quality
-            </p>
+            <h1 className="text-3xl font-bold text-white mb-2">🖼️ Image Compressor</h1>
+            <p className="text-slate-400 text-sm">Compress PNG & JPEG up to 80% without losing quality</p>
           </div>
 
           <div className="space-y-4">
-            <div className="border-2 border-dashed border-slate-600 rounded-lg p-8 text-center hover:border-blue-500 transition">
+            <div className="border-2 border-dashed border-slate-600 rounded-lg p-8 text-center hover:border-blue-500 transition cursor-pointer">
               <input
                 type="file"
                 accept="image/*"
@@ -91,28 +87,22 @@ export default function App() {
                 className="hidden"
                 id="image-input"
               />
-              <label htmlFor="image-input" className="cursor-pointer">
-                <p className="text-slate-400 mb-2">📁 Click or drag image</p>
+              <label htmlFor="image-input" className="cursor-pointer block">
+                <p className="text-slate-300 mb-2">📁 Click or drag image</p>
                 <p className="text-xs text-slate-500">PNG, JPEG, WebP up to 50MB</p>
               </label>
             </div>
 
             {originalImage && (
               <div className="bg-slate-700 p-3 rounded">
-                <p className="text-sm text-slate-300">
-                  📄 {originalImage.name}
-                </p>
-                <p className="text-xs text-slate-400">
-                  {(originalImage.size / 1024).toFixed(2)} KB
-                </p>
+                <p className="text-sm text-slate-300">📄 {originalImage.name}</p>
+                <p className="text-xs text-slate-400">{(originalImage.size / 1024).toFixed(2)} KB</p>
               </div>
             )}
 
             {originalImage && (
               <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Quality: {quality}%
-                </label>
+                <label className="block text-sm font-medium text-slate-300 mb-2">Quality: {quality}%</label>
                 <input
                   type="range"
                   min="10"
@@ -133,7 +123,7 @@ export default function App() {
             </button>
 
             {stats && (
-              <div className="bg-slate-700 p-4 rounded border border-slate-600 space-y-2">
+              <div className="bg-blue-900 bg-opacity-30 p-4 rounded border border-blue-600 space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-400">Original:</span>
                   <span className="text-white font-medium">{stats.original} KB</span>
