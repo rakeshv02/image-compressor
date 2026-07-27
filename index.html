@@ -1,36 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Compressor — Free Online PNG, JPEG & WebP Compressor | Tabutility</title>
-    <meta name="description" content="Free image compressor. Compress PNG, JPEG, and WebP images up to 80% without losing quality. Reduce file size instantly for web, email, and storage. No sign-up, runs in your browser." />
-    <meta name="keywords" content="image compressor, compress image, reduce image size, png compressor, jpeg compressor, webp compressor, free image compressor" />
-    <link rel="canonical" href="https://image-compressor.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://image-compressor.tabutility.com/" />
-    <meta property="og:title" content="Image Compressor — Free Online PNG, JPEG & WebP Compressor" />
-    <meta property="og:description" content="Compress PNG, JPEG, and WebP images up to 80% without losing quality. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Image Compressor — Free Online PNG, JPEG & WebP Compressor" />
-    <meta name="twitter:description" content="Compress PNG, JPEG, and WebP images up to 80% without losing quality. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "Image Compressor", "url": "https://image-compressor.tabutility.com", "description": "Free online image compressor. Compress PNG, JPEG, and WebP images up to 80% without losing quality.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Image Compressor — Tabutility</title>
+<meta name="description" content="Free online image compressor. Compress JPEG, PNG and WebP images in your browser. No upload, no server, fully private."/>
+<meta name="keywords" content="image compressor, compress image online, reduce image size, image optimizer, jpeg compressor, png compressor"/>
+<link rel="canonical" href="https://image-compressor.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>"/>
+<meta property="og:title" content="Image Compressor"/>
+<meta property="og:description" content="Compress images in your browser — JPEG, PNG, WebP. No upload, 100% private."/>
+<meta property="og:url" content="https://image-compressor.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Image Compressor"/>
+<meta name="twitter:description" content="Compress images in your browser — JPEG, PNG, WebP. No upload, 100% private."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Image Compressor","url":"https://image-compressor.tabutility.com/","description":"Free online image compressor. Compress JPEG, PNG and WebP images in your browser. No upload, no server, fully private.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Image Tools","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"Image Compressor","item":"https://image-compressor.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my images uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No — all compression happens in your browser using HTML Canvas. Your images never leave your device."}},{"@type":"Question","name":"What formats are supported?","acceptedAnswer":{"@type":"Answer","text":"JPEG, PNG and WebP."}},{"@type":"Question","name":"Is the Image Compressor free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Can I use the Image Compressor on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes — works on any device. You can select images from your camera roll."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:700px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:26px;font-weight:800;margin:24px 0 4px;text-align:center}
+.subtitle{color:#94a3b8;text-align:center;font-size:14px;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:16px}
+.drop-zone{border:2px dashed #334155;border-radius:12px;padding:40px 20px;text-align:center;cursor:pointer;transition:all .2s;position:relative}
+.drop-zone:hover,.drop-zone.drag-over{border-color:#38bdf8;background:rgba(56,189,248,0.05)}
+.drop-zone .icon{font-size:48px;margin-bottom:12px}
+.drop-zone .dz-text{font-size:16px;font-weight:600;color:#f1f5f9;margin-bottom:4px}
+.drop-zone .dz-sub{font-size:13px;color:#94a3b8}
+.drop-zone input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.quality-row{display:flex;align-items:center;gap:12px;margin:16px 0}
+.quality-row label{font-size:13px;font-weight:600;color:#94a3b8;white-space:nowrap}
+.quality-row input[type=range]{flex:1;accent-color:#38bdf8;height:6px}
+.quality-val{font-size:16px;font-weight:700;color:#38bdf8;min-width:40px;text-align:right}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.comp-panel{background:#0f172a;border:1px solid #334155;border-radius:10px;overflow:hidden}
+.comp-header{padding:10px 14px;border-bottom:1px solid #334155;font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em}
+.comp-img{width:100%;max-height:220px;object-fit:contain;display:block;background:#0a0f1e}
+.comp-info{padding:10px 14px;font-size:13px}
+.comp-info .size{font-size:18px;font-weight:700;color:#f1f5f9}
+.comp-info .dim{color:#94a3b8;font-size:12px;margin-top:2px}
+.savings-badge{display:inline-block;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.3);color:#22c55e;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:700;margin-top:10px}
+.savings-badge.bad{background:rgba(239,68,68,0.15);border-color:rgba(239,68,68,0.3);color:#ef4444}
+.dl-btn{width:100%;padding:12px;background:#22c55e;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;margin-top:12px;transition:background .2s}
+.dl-btn:hover{background:#16a34a}
+.privacy-note{text-align:center;font-size:12px;color:#64748b;margin-top:8px;padding:8px;background:rgba(255,255,255,0.03);border-radius:8px}
+@media(max-width:500px){.comparison{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>🖼️ Image Compressor</h1>
+  <p class="subtitle">Compress images in your browser. 100% private — nothing is uploaded.</p>
+
+  <div class="card">
+    <div class="drop-zone" id="dropZone">
+      <div class="icon">📁</div>
+      <div class="dz-text">Drop an image here or click to browse</div>
+      <div class="dz-sub">Supports JPEG, PNG, WebP</div>
+      <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" onchange="handleFile(this.files[0])"/>
+    </div>
+    <div class="privacy-note">🔒 Your images never leave your device. All processing happens locally in your browser.</div>
+  </div>
+
+  <div class="card" id="compressCard" style="display:none">
+    <div class="quality-row">
+      <label>Quality:</label>
+      <input type="range" id="qualitySlider" min="10" max="100" value="80" oninput="onQualityChange()"/>
+      <span class="quality-val" id="qualityVal">80%</span>
+    </div>
+    <div class="comparison">
+      <div class="comp-panel">
+        <div class="comp-header">Original</div>
+        <img id="originalPreview" class="comp-img"/>
+        <div class="comp-info">
+          <div class="size" id="origSize">—</div>
+          <div class="dim" id="origDim">—</div>
+        </div>
+      </div>
+      <div class="comp-panel">
+        <div class="comp-header">Compressed</div>
+        <img id="compressedPreview" class="comp-img"/>
+        <div class="comp-info">
+          <div class="size" id="compSize">—</div>
+          <div class="dim" id="compDim">—</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:12px">
+      <span class="savings-badge" id="savingsBadge">—</span>
+    </div>
+    <button class="dl-btn" onclick="downloadCompressed()">⬇ Download Compressed Image</button>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://qr-code-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">QR Code Generator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Tools</div>
+      </a>
+      <a href="https://base64-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Tools</div>
+      </a>
+      <a href="https://url-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">URL Encoder</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Tools</div>
+      </a>
+      <a href="https://word-counter.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Word Counter</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Text Tools</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Are my images uploaded to a server?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">No — all compression happens in your browser using HTML Canvas. Your images never leave your device.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">What formats are supported?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">JPEG, PNG and WebP. The compressed output is saved as JPEG or WebP depending on your browser.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Works on mobile?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — works on any device. You can select images from your camera roll on iOS and Android.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let originalImage = null;
+let originalFile = null;
+let compressedDataUrl = null;
+let canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+
+const dropZone = document.getElementById('dropZone');
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]); });
+
+function fmtSize(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+  return (bytes / 1048576).toFixed(2) + ' MB';
+}
+
+function handleFile(file) {
+  if (!file || !file.type.startsWith('image/')) return;
+  originalFile = file;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const img = new Image();
+    img.onload = function() {
+      originalImage = img;
+      document.getElementById('originalPreview').src = e.target.result;
+      document.getElementById('origSize').textContent = fmtSize(file.size);
+      document.getElementById('origDim').textContent = img.width + ' × ' + img.height + ' px';
+      document.getElementById('compressCard').style.display = 'block';
+      compress();
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+function onQualityChange() {
+  const q = document.getElementById('qualitySlider').value;
+  document.getElementById('qualityVal').textContent = q + '%';
+  if (originalImage) compress();
+}
+
+function compress() {
+  if (!originalImage) return;
+  canvas.width = originalImage.width;
+  canvas.height = originalImage.height;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(originalImage, 0, 0);
+  const quality = parseInt(document.getElementById('qualitySlider').value) / 100;
+  const mimeType = originalFile && originalFile.type === 'image/png' ? 'image/jpeg' : (originalFile ? originalFile.type : 'image/jpeg');
+  compressedDataUrl = canvas.toDataURL(mimeType, quality);
+  document.getElementById('compressedPreview').src = compressedDataUrl;
+  document.getElementById('compDim').textContent = originalImage.width + ' × ' + originalImage.height + ' px';
+  const base64 = compressedDataUrl.split(',')[1];
+  const compBytes = Math.round((base64.length * 3) / 4);
+  document.getElementById('compSize').textContent = fmtSize(compBytes);
+  const origBytes = originalFile.size;
+  const saved = ((origBytes - compBytes) / origBytes * 100);
+  const badge = document.getElementById('savingsBadge');
+  if (saved > 0) {
+    badge.textContent = '✅ ' + saved.toFixed(1) + '% smaller (' + fmtSize(origBytes - compBytes) + ' saved)';
+    badge.className = 'savings-badge';
+  } else {
+    badge.textContent = '⚠️ ' + Math.abs(saved).toFixed(1) + '% larger — try lower quality';
+    badge.className = 'savings-badge bad';
+  }
+}
+
+function downloadCompressed() {
+  if (!compressedDataUrl) return;
+  const a = document.createElement('a');
+  const ext = originalFile && originalFile.type === 'image/png' ? 'jpg' : (originalFile ? originalFile.name.split('.').pop() : 'jpg');
+  const baseName = originalFile ? originalFile.name.replace(/\.[^/.]+$/,'') : 'compressed';
+  a.download = baseName + '-compressed.' + ext;
+  a.href = compressedDataUrl;
+  a.click();
+}
+</script>
+</body>
 </html>
