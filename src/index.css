@@ -15,11 +15,11 @@ html {
 }
 
 body {
-  font-family:'Inter', 'Inter', sans-serif;
-  background: #f8f7f4;
+  font-family:'Segoe UI',system-ui,Arial,sans-serif;
+  background: #0f172a;
   color: #e2e8f0;
 }
 
 input, textarea {
-  font-family:'Inter', 'Inter', sans-serif;
+  font-family:'Segoe UI',system-ui,Arial,sans-serif;
 }
