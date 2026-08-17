@@ -102,7 +102,7 @@ ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe,.ad-container iframe{visibilit
     <div class="comparison">
       <div class="comp-panel">
         <div class="comp-header">Original</div>
-        <img id="originalPreview" class="comp-img"/>
+        <img id="originalPreview" class="comp-img" fetchpriority="high">
         <div class="comp-info">
           <div class="size" id="origSize">—</div>
           <div class="dim" id="origDim">—</div>
@@ -110,7 +110,7 @@ ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe,.ad-container iframe{visibilit
       </div>
       <div class="comp-panel">
         <div class="comp-header">Compressed</div>
-        <img id="compressedPreview" class="comp-img"/>
+        <img id="compressedPreview" class="comp-img" loading="lazy">
         <div class="comp-info">
           <div class="size" id="compSize">—</div>
           <div class="dim" id="compDim">—</div>
